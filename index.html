@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homem Aranha no Aranhaverso</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="halftone-overlay"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="nav">
+    <div class="nav__logo"><span>ARANHAVERSO</span></div>
+    <div class="nav__links">
+      <a href="#conceito">O Conceito</a>
+      <a href="#personagens">Aranhas</a>
+      <a href="#regras">Regras</a>
+      <a href="#cenas">Cenas</a>
+    </div>
+  </nav>
+
+ 
+  <section class="hero" id="hero">
+    <div class="hero__speedlines"></div>
+    <div class="hero__bgimage"></div>
+    <div class="hero__grid"></div>
+
+    <div class="hero__eyebrow-row">
+      <span class="dot"></span>
+      <p>Infinitas dimensões. Infinitos aranhas.</p>
+    </div>
+
+    <h1 class="hero__title">
+      Bem vindo ao
+      <span class="line2"><span class="glitchword" data-text="ARANHAVERSO">ARANHAVERSO</span></span>
+    </h1>
+
+    <p class="hero__sub">Cada universo tem seu próprio herói. Escolha uma dimensão e conheça o Aranha que a protege.</p>
+
+    <!-- CARROSSEL 3D -->
+    <div class="stage" id="stage">
+      <div class="stage__floor"></div>
+      <button class="stage__arrow stage__arrow--prev" id="prevBtn" aria-label="Personagem anterior">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="stage__track" id="track"></div>
+      <button class="stage__arrow stage__arrow--next" id="nextBtn" aria-label="Próximo personagem">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="selected-info" id="selectedInfo">
+      <div class="selected-info__name" id="selName"></div>
+      <div class="selected-info__universe" id="selUniverse"></div>
+      <p class="selected-info__desc" id="selDesc"></p>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <div class="hero__cta-row">
+      <a href="#conceito" class="btn-explore">
+        <span>
+          Explorar o Aranhaverso
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="scroll-cue"><span>Scroll</span><span class="stick"></span></div>
+  </section>
+
+  <section class="concept" id="conceito">
+    <div class="concept__bg-portals"></div>
+    <div class="concept__label">O conceito</div>
+    <h2 class="concept__title">Não existe apenas <em>um</em> Aranhaverso. Existem infinitos.</h2>
+
+    <div class="concept__body">
+      <div class="concept__text">
+        <p>Cada picada de aranha radioativa acontece em uma realidade diferente — e cada realidade cria <strong>seu próprio herói</strong>, com sua própria cidade, sua própria dor e sua própria versão da mesma promessa.</p>
+        <p>Quando essas dimensões se cruzam, o multiverso treme. É nesse instante — entre um universo e outro — que o Aranhaverso realmente começa.</p>
+
+        <div class="concept__stats">
+          <div class="concept__stat"><b>+280</b><span>Dimensões catalogadas</span></div>
+          <div class="concept__stat"><b>1</b><span>Promessa em comum</span></div>
+          <div class="concept__stat"><b>∞</b><span>Versões possíveis</span></div>
+        </div>
+      </div>
+
+      <div class="portal-stack" id="portalStack"></div>
+    </div>
+  </section>
+
+  
+  <section class="roster" id="personagens">
+    <div class="roster__head">
+      <h2 class="roster__title">Conheça os <span>Aranhas</span></h2>
+      <p class="roster__sub">Passe o mouse (ou toque) em cada card para revelar a história por trás da máscara.</p>
+    </div>
+    <div class="roster__grid" id="rosterGrid"></div>
+  </section>
+
+ 
+  <section class="rules" id="regras">
+    <h2 class="rules__title">Regras do <span>Multiverso</span></h2>
+    <p class="rules__sub">O que rege o Aranhaverso não são os heróis — são as leis invisíveis por trás de cada dimensão.</p>
+    <div class="rules__list" id="rulesList"></div>
+  </section>
+
+  
+  <section class="scenes" id="cenas">
+    <div class="scenes__head">
+      <h2 class="scenes__title">Cenas <span>Marcantes</span></h2>
+      <p class="scenes__sub">Arraste para o lado e reviva os momentos que definiram o Aranhaverso.</p>
+    </div>
+    <div class="scenes__track" id="scenesTrack"></div>
+  </section>
+
+
+  <section class="finale" id="final">
+    <div class="finale__speedlines"></div>
+    <p class="finale__eyebrow">Fim da jornada. Início de outra.</p>
+    <h1 class="finale__title">Em cada universo, existe <em>um herói</em>.</h1>
+    <p class="finale__sub">A pergunta nunca foi "quem é o Aranha?" — sempre foi "qual deles é o seu?"</p>
+    <div class="finale__actions">
+      <a href="#hero" class="btn-explore"><span>Voltar ao início<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a href="#hero" class="btn-ghost" id="exploreAgainBtn"><span>Explorar personagens de novo</span></a>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
